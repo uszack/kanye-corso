@@ -1,0 +1,219 @@
+/* Variables */
+:root {
+  --primary-dark-blue: #000089;
+  --primary-light-blue: #0000ff;
+  --primary-red: #f92828;
+}
+
+/* Navbar */
+@media (max-width: 992px) {
+  #navbar {
+    padding: 0;
+  }
+  #navbar .container-fluid {
+    padding: 0;
+  }
+}
+#navbar {
+  background: linear-gradient(180deg, #0000dd 0%, #0000ff 100%);
+  border-bottom: 5px solid #000000;
+  min-height: 60px;
+}
+#navbar-logo {
+  background: url("../images/kanye-corso-training-text-logo.svg") no-repeat;
+  background-size: contain;
+  height: 100px;
+  left: 20px;
+  position: absolute;
+  top: 10px;
+  width: 230px;
+  z-index: 10;
+}
+#navbar-logo::after {
+  background: var(--primary-light-blue);
+  content: "";
+  display: none;
+  height: 120px;
+  left: -10px;
+  position: relative;
+  top: -10px;
+  width: 250px;
+  z-index: -10;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#navbar-links {
+  background: unset;
+  margin-left: 250px;
+}
+@media (max-width: 992px) {
+  #navbar-links {
+    background: #151515;
+    margin-left: 0;
+    margin-top: 60px;
+    padding: 60px 20px 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.nav-link {
+  color: #ffffff;
+}
+.nav-link:hover {
+  background: #000000;
+}
+
+/* Hero */
+#hero {
+  align-items: center;
+  background: url("../images/boston-terrier.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 56px);
+  position: relative;
+  width: 100%;
+}
+
+#hero-content {
+  background: #000000 !important;
+  bottom: 5%;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  #hero-content {
+    bottom: 20%;
+    position: absolute;
+    left: 10%;
+    width: unset;
+  }
+}
+
+/* Content Sections */
+.content-light {
+  background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%) !important;
+  padding: 30px 0;
+}
+.content-dark {
+  background: linear-gradient(180deg, #222222 0%, #111111 100%) !important;
+  border-bottom: 5px solid #000000;
+  border-top: 5px solid #000000;
+  padding: 30px 0;
+}
+.feature-text {
+  align-items: center;
+  display: flex;
+  padding: 30px;
+}
+.contact-page {
+  padding-bottom: 100px;
+}
+.footer {
+  background: linear-gradient(180deg, #0000dd 0%, #0000ff 100%);
+}
+
+/* Pricing Table */
+.pricing-table {
+  display: grid;
+  grid-template-columns: 32% 36% 32%;
+  margin: 60px;
+}
+@media (max-width: 992px) {
+  .pricing-table {
+    grid-template-columns: 100%;
+  }
+}
+.pricing-column {
+  background: linear-gradient(180deg, #555555 0%, #333333 100%);
+  border: 1px solid #111111;
+  border-radius: 5px;
+  box-shadow: #000000 2px 2px 15px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.pricing-column.featured {
+  scale: 1.075;
+  z-index: 10;
+}
+@media (max-width: 992px) {
+  .pricing-column.featured {
+    scale: 1.005;
+  }
+}
+.pricing-column h3 {
+  background: linear-gradient(180deg, #151515 0%, #111111 100%);
+  border-radius: 5px 5px 0px 0px;
+  padding: 20px 0px;
+  margin: 0;
+  text-align: center;
+}
+.pricing-column.featured h3 {
+  background: linear-gradient(180deg, #0000ee 0%, #0000ff 100%);
+}
+.price {
+  background: #000;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0px;
+  text-align: center;
+}
+.pricing-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0px;
+}
+.pricing-list li {
+  color: #bbbbbb;
+  line-height: 16px;
+  padding: 0px 60px 4px;
+  position: relative;
+}
+.pricing-list i {
+  color: #ffffff;
+  font-size: 24px;
+  left: 34px;
+  position: absolute;
+  top: -4px;
+}
+.pricing-column .feature {
+  background: #ffc107;
+  bottom: 36px;
+  color: #000000;
+  font-size: 20px;
+  padding: 4px 68px;
+  position: absolute;
+  right: -50px;
+  transform: rotate(-45deg);
+}
+.pricing-cta {
+  margin: 0px 0px 60px;
+  text-align: center;
+}
+
+/* Typography */
+p,
+li {
+  color: #cccccc;
+}
+.content-light p,
+.content-light li {
+  color: #555555;
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
