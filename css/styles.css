@@ -93,8 +93,13 @@
 }
 
 /* Content Sections */
+.content-white {
+  background: radial-gradient(#ffffff 50%, #dddddd);
+  border-bottom: 5px solid #000;
+  padding: 30px 0;
+}
 .content-light {
-  background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%) !important;
+  background: linear-gradient(180deg, #eee 0%, #dddddd 100%) !important;
   padding: 30px 0;
 }
 .content-dark {
@@ -113,6 +118,15 @@
 }
 .footer {
   background: linear-gradient(180deg, #0000dd 0%, #0000ff 100%);
+}
+
+/* Featured Banner */
+#featured {
+  color: #333333;
+  text-align: center;
+}
+#featured img {
+  filter: grayscale(1);
 }
 
 /* Pricing Table */
@@ -224,6 +238,21 @@ li {
   height: 150px;
   margin: 0px 0px 20px 20px;
   width: 150px;
+}
+
+/* Discount Banner */
+.discount-banner {
+  background: #111111;
+  border: none;
+  color: #ffffff;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50px auto;
+}
+.discount-banner i {
+  color: #ffc107;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 /* Portal */
