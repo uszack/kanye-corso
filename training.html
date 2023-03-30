@@ -27,6 +27,20 @@
     />
   </head>
   <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5JY260MGEZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5JY260MGEZ");
+    </script>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a id="navbar-logo" class="navbar-brand" href="./index.html"></a>
@@ -58,6 +72,11 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li>
+                  <a class="dropdown-item" href="./puppy-training.html"
+                    >Puppy Training</a
+                  >
+                </li>
+                <li>
                   <a class="dropdown-item" href="./courses.html"
                     >Elite K9 Courses</a
                   >
@@ -73,11 +92,35 @@
               <a class="nav-link" href="./boarding.html">Boarding</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./social-club.html">Social Club</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Partners
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="./dizzy-rescue.html"
+                    >Dizzy Dog Rescue</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
-          <a class="btn btn-warning" href="tel:6123861790"
+          <a class="btn btn-warning me-2" href="tel:6123861790"
             ><i class="bi-telephone-fill"></i> Call To Book Your Session</a
+          >
+          <a class="btn btn-dark" href="./portal.html"
+            ><i class="bi-person-circle"></i> Client Portal</a
           >
         </div>
       </div>
@@ -124,9 +167,11 @@
                   </ul>
                   <h4>Pricing</h4>
                   <p>Private training sessions are $100/hr.</p>
-                  <a class="btn btn-warning" href="tel:6123861790"
-                    ><i class="bi-telephone-fill"></i> Call To Book Your Private
-                    Training Session</a
+                  <a class="btn btn-warning" href="./portal.html"
+                    ><i class="bi-laptop"></i> Book Online</a
+                  >
+                  <a class="btn btn-dark" href="tel:6123861790"
+                    ><i class="bi-telephone-fill"></i> Call To Book</a
                   >
                   <h3 class="mt-5">Behavioral Modification Course</h3>
                   <p>
@@ -150,9 +195,11 @@
                     <li>3 weeks - $2500</li>
                     <li>4 weeks - $3000</li>
                   </ul>
-                  <a class="btn btn-warning" href="tel:6123861790"
-                    ><i class="bi-telephone-fill"></i> Call To Book A Behavioral
-                    Modification Course</a
+                  <a class="btn btn-warning" href="./portal.html"
+                    ><i class="bi-laptop"></i> Book Online</a
+                  >
+                  <a class="btn btn-dark" href="tel:6123861790"
+                    ><i class="bi-telephone-fill"></i> Call To Book</a
                   >
                 </div>
               </div>
@@ -291,6 +338,11 @@
               <a class="nav-link text-center text-lg-end" href="./about.html"
                 >About</a
               >
+              <a
+                class="nav-link text-center text-lg-end"
+                href="./puppy-training.html"
+                >Puppy Training</a
+              >
               <a class="nav-link text-center text-lg-end" href="./courses.html"
                 >Elite K9 Courses</a
               >
@@ -299,6 +351,11 @@
               >
               <a class="nav-link text-center text-lg-end" href="./boarding.html"
                 >Dog Boarding</a
+              >
+              <a
+                class="nav-link text-center text-lg-end"
+                href="./social-club.html"
+                >Social Club</a
               >
               <a class="nav-link text-center text-lg-end" href="./contact.html"
                 >Contact</a
