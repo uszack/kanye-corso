@@ -28,14 +28,8 @@
   </head>
   <body>
     <script>
-      // Safari doesn't support the iframe of Gingr, so we just redirect
-      var ua = navigator.userAgent.toLowerCase();
-      var isSafari = ua.indexOf("safari") !== -1 && ua.indexOf("chrome") === -1;
-
-      if (isSafari) {
-        window.location.href =
-          "https://kanyecorsotraining.portal.gingrapp.com/#/public/login";
-      }
+      window.location.href =
+        "https://kanyecorsotraining.portal.gingrapp.com/#/public/login";
     </script>
     <!-- Google tag (gtag.js) -->
     <script
